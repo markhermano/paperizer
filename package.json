@@ -1,0 +1,49 @@
+{
+  "name": "paperizer",
+  "version": "0.0.4",
+  "type": "module",
+  "author": "Mark Hermano",
+  "license": "MIT",
+  "main": "paperizer.js",
+  "exports": {
+    ".": {
+      "import": "./dist/paperizer.js",
+      "require": "./dist/paperizer.cjs",
+      "types": "./dist/main.d.ts"
+    }
+  },
+  "module": "./dist/main.js",
+  "types": "./dist/types/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "lint": "eslint --ext .ts,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-vue": "^9.13.0",
+    "prettier": "2.8.8",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.8",
+    "vite-plugin-dts": "^2.3.0",
+    "vitepress": "^1.0.0-alpha.76"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "directories": {
+    "doc": "docs"
+  }
+}
