@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import { usePaperizer } from 'paperizer'
+import { usePaperizer } from '../../dist/paperizer'
 
 const callback = () => {
   alert('This is a callback!')

@@ -46,11 +46,8 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['meta', { name: 'author', content: 'Mark Hermano' }],
     ['meta', { property: 'og:title', content: 'Paperizer' }],
-    // ['meta', { property: 'og:image', content: '' }],
+    ['meta', { property: 'og:image', content: 'https://markhermano.github.io/paperizer/favicon.svg' }],
     ['meta', { property: 'og:description', content: 'Vue js composable to easily print components' }],
-    // ['meta', { name: 'twitter:card', content: '' }],
-    // ['meta', { name: 'twitter:creator', content: '' }],
-    // ['meta', { name: 'twitter:image', content: '' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, viewport-fit=cover' }],
 
     ['link', { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' }],
