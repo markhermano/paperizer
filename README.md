@@ -4,4 +4,4 @@
 
 ## Vue composable to print components.
 
-[See Documentation]()
+[See Full Documentation](https://markhermano.github.io/paperizer/)
