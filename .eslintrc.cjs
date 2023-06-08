@@ -31,4 +31,5 @@ module.exports = {
     ],
     semi: [2, 'never'],
   },
+  "ignorePatterns": ["dist"],
 }

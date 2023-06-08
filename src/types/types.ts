@@ -3,7 +3,7 @@ export interface PaperizerOption {
    *
    * @see https://developer.mozilla.org/en-US/docs/Web/API/Window/open#syntax
    *
-   * @param target same as target paramter
+   * @param target same as target paramter for Window: open() method
    * @param features same as windowFeatures paramter
    *
    */
