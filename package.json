@@ -1,10 +1,9 @@
 {
   "name": "paperizer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "author": "Mark Hermano",
   "license": "MIT",
-  "main": "paperizer.js",
   "exports": {
     ".": {
       "import": "./dist/paperizer.js",
@@ -12,8 +11,9 @@
       "types": "./dist/main.d.ts"
     }
   },
-  "module": "./dist/main.js",
-  "types": "./dist/types/types.d.ts",
+  "main": "./dist/paperizer.js",
+  "module": "./dist/paperizer.cjs",
+  "types": "./dist/main.d.ts",
   "files": [
     "dist"
   ],
@@ -34,7 +34,6 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-vue": "^9.13.0",
     "prettier": "2.8.8",
-    "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.8",
     "vite-plugin-dts": "^2.3.0",
