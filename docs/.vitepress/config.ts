@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/paperizer/',
   lang: 'en-US',
   title: 'Paperizer',
   description: 'Vue js composable to easily print components',
