@@ -1,4 +1,4 @@
-<img src='./docs/public/favicon.svg' width='150'>
+<img src='https://markhermano.github.io/paperizer/favicon.svg' width='150'>
 
 # Paperizer
 

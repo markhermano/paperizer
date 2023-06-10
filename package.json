@@ -1,6 +1,6 @@
 {
   "name": "paperizer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "author": "Mark Hermano",
   "license": "MIT",
@@ -44,5 +44,11 @@
   },
   "directories": {
     "doc": "docs"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markhermano/paperizer"
+  },
+  "homepage": "https://github.com/markhermano/paperizer/blob/main/README.md",
+  "keywords": ["vue", "typescript", "print", "html", "print element"]
 }
