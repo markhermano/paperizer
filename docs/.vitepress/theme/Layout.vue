@@ -12,6 +12,13 @@ import DefaultTheme from "vitepress/theme"
 
 <style scoped>
 img {
-  max-height: 400px;
+  width: 100%;
+  padding: 4rem;
+}
+
+@media (min-width: 960px) {
+  img {
+    max-width: 400px;
+  }
 }
 </style>
