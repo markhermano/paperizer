@@ -11,6 +11,7 @@ const useOptions = (options?: PaperizerOption) => {
   const features = ref<string>('')
   const windowTitle = ref<string | undefined>('')
   const autoClose = ref(true)
+  const bodyClass = ref<string>('')
 
   const filteredFeatures = (features: string[]) => {
     return features?.filter((feature) => feature)
@@ -22,12 +23,14 @@ const useOptions = (options?: PaperizerOption) => {
   )
   windowTitle.value = options?.windowTitle || defaultWindowTitle
   autoClose.value = options?.autoClose ?? defaultAutoClose
+  bodyClass.value = options?.bodyClass ?? ''
 
   return {
     target: target.value,
     features: features.value,
     windowTitle: windowTitle.value,
-    autoClose: autoClose.value
+    autoClose: autoClose.value,
+    bodyClass: bodyClass.value,
   }
 }
 
