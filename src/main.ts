@@ -12,15 +12,15 @@ export const usePaperizer = (
   callBack: Function = () => {}
 ): { paperize: () => void } => {
   const windowWithLocalOptions = (options?: PaperizerOption) => {
-    const { target, features, windowTitle, autoClose, bodyClass } = useOptions(options)
+    const { target, features, windowTitle, autoClose, bodyClass, autoPrint } = useOptions(options)
     const { previewWindow } = useWindow(target, features)
 
-    return { defaultWindow: previewWindow.value, target, windowTitle, autoClose, bodyClass }
+    return { defaultWindow: previewWindow.value, target, windowTitle, autoClose, bodyClass, autoPrint }
   }
 
   const paperize = (): void => {
     const { selectedElement } = useComponent(elementId)
-    const { defaultWindow, target, windowTitle, autoClose, bodyClass } =
+    const { defaultWindow, target, windowTitle, autoClose, bodyClass, autoPrint } =
       windowWithLocalOptions(options)
     const { writeWindowContent } = useWindowContent()
     const { attachStyles } = useStyle()
@@ -32,12 +32,14 @@ export const usePaperizer = (
       setTimeout(() => {
         defaultWindow.document.close()
         defaultWindow.focus()
-        defaultWindow.print()
-        setTimeout(function () {
-          if (target !== '_blank') return
-
-          if (autoClose) defaultWindow.close()
-        }, 1)
+        if(autoPrint){
+          defaultWindow.print()
+          setTimeout(function () {
+            if (target !== '_blank') return
+  
+            if (autoClose) defaultWindow.close()
+          }, 1)
+        } 
         callBack()
       }, 1000)
     }

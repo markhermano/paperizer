@@ -41,4 +41,6 @@ export interface PaperizerOption {
    *
    */
   bodyClass?: string
+
+  autoPrint?: boolean
 }
