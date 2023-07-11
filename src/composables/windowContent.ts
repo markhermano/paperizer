@@ -1,11 +1,11 @@
 const useWindowContent = () => {
-  const writeWindowContent = (window: Window, element: HTMLElement) => {
+  const writeWindowContent = (window: Window, element: HTMLElement, bodyClass: string) => {
     window.document.write(`
       <html>
         <head>
           <title>${window.document.title}</title>
         </head>
-        <body>
+        <body class="${bodyClass}">
           ${element.innerHTML}
         </body>
       </html>

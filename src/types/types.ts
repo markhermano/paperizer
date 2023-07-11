@@ -34,4 +34,13 @@ export interface PaperizerOption {
    *
    */
   windowTitle?: string
+
+  /**
+   *
+   * Adds a custom body class to the print preview window.
+   *
+   */
+  bodyClass?: string
+
+  autoPrint?: boolean
 }
