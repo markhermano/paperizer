@@ -42,8 +42,8 @@ export default defineConfig({
   },
   head: [
     ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['link', { rel: 'icon', href: '/favicon-32x32.png', type: 'image/png' }],
-    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: '/paperizer/favicon-32x32.png', type: 'image/png' }],
+    ['link', { rel: 'icon', href: '/paperizer/favicon.svg', type: 'image/svg+xml' }],
     ['meta', { name: 'author', content: 'Mark Hermano' }],
     ['meta', { property: 'og:title', content: 'Paperizer' }],
     ['meta', { property: 'og:image', content: 'https://markhermano.github.io/paperizer/favicon.svg' }],

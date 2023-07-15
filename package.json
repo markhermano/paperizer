@@ -1,8 +1,9 @@
 {
   "name": "paperizer",
-  "version": "0.0.6",
+  "version": "0.1.6",
   "type": "module",
   "author": "Mark Hermano",
+  "description": "Vue composable to easily print components.",
   "license": "MIT",
   "exports": {
     ".": {

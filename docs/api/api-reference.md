@@ -19,4 +19,4 @@
 | autoClose      | automatically closes the print preview window after the print window is closed  | `boolean`         | `true`        |
 | windowTitle      | custom window title of the print preview window  | `string`         | (Current window title)        |
 | autoPrint      | automatically start printer printing function  | `boolean`         | `true`        |
-| bodyClass      | add class in body   | `string`         |         |
+| bodyClass      | add class in body   | `string`         | --  |
